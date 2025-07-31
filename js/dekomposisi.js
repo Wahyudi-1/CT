@@ -2,6 +2,7 @@
 
 // Impor fungsi yang dibutuhkan dari file utilitas.
 // Browser akan otomatis mencari file utils.js di folder yang sama.
+import { setupDragDropListeners, setupSeleksiKlikListeners } from './utils.js';
 
 document.addEventListener('DOMContentLoaded', () => {
 
