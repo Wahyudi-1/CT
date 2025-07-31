@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Meta tags esensial -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latihan interaktif untuk melatih keterampilan pengenalan pola dalam berpikir komputasi.">
+    
+    <!-- Judul spesifik untuk halaman ini -->
+    <title>Pengenalan Pola - Latihan Berpikir Komputasi</title>
+    
+    <!-- Menggunakan file CSS yang sama -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ======================= HEADER ======================= -->
+    <!-- Header yang konsisten, dengan class 'active' dipindahkan ke link yang sesuai -->
+    <header>
+        <div class="container">
+            <h1>Latihan Berpikir Komputasi</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="dekomposisi.html">Dekomposisi</a></li>
+                    <!-- Tandai link ini sebagai halaman yang aktif -->
+                    <li><a href="pola.html" class="active">Pengenalan Pola</a></li>
+                    <li><a href="abstraksi.html">Abstraksi</a></li>
+                    <li><a href="algoritma.html">Algoritma</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ======================== MAIN CONTENT ======================== -->
+    <main>
+        <div class="container">
+
+            <!-- Section 1: Penjelasan Konsep Pengenalan Pola -->
+            <section id="penjelasan-konsep">
+                <h2>Pilar 2: Pengenalan Pola</h2>
+                <p>
+                    <strong>Pengenalan Pola</strong> adalah tentang mengidentifikasi kesamaan, tren, atau keteraturan dalam data. Ketika Anda mengenali pola, Anda bisa membuat prediksi atau menemukan solusi yang lebih efisien. Dalam koding, ini seperti menemukan bahwa Anda menulis blok kode yang sama berulang kali, lalu mengubahnya menjadi sebuah fungsi yang bisa dipanggil kapan saja. Ini membuat kode lebih singkat dan cerdas!
+                </p>
+            </section>
+
+            <!-- Section 2: Latihan Interaktif -->
+            <section id="latihan-interaktif">
+                <h2>Latihan: Lanjutkan Polanya!</h2>
+                <p>
+                    Perhatikan urutan gambar di bawah ini. Temukan polanya, lalu klik pada jawaban yang menurutmu paling tepat untuk melanjutkan urutan tersebut.
+                </p>
+
+                <!-- Wadah utama untuk latihan pola -->
+                <div class="pola-exercise-container">
+                    
+                    <h3>Pola Saat Ini:</h3>
+                    <!-- Area untuk menampilkan urutan pola -->
+                    <div id="pola-sequence" class="pola-display">
+                        <span class="pola-item">☀️</span>
+                        <span class="pola-item">🌙</span>
+                        <span class="pola-item">☀️</span>
+                        <span class="pola-item">🌙</span>
+                        <span class="pola-item pola-placeholder">?</span>
+                    </div>
+
+                    <h3>Pilih Jawabanmu:</h3>
+                    <!-- Area untuk tombol pilihan jawaban -->
+                    <div id="pilihan-jawaban" class="pilihan-container">
+                        <!-- Tombol yang benar memiliki atribut data-correct="true" -->
+                        <button class="pilihan" data-correct="true">☀️</button>
+                        <button class="pilihan" data-correct="false">🌙</button>
+                        <button class="pilihan" data-correct="false">☁️</button>
+                        <button class="pilihan" data-correct="false">⭐</button>
+                    </div>
+                </div>
+
+                <!-- Area untuk menampilkan feedback dan tombol reset -->
+                <div class="feedback-area">
+                    <!-- Feedback akan muncul di sini (misal: "Benar!", "Coba lagi!") -->
+                    <p id="hasil-feedback-pola"></p> 
+                    <!-- Tombol ini bisa kita munculkan setelah user menjawab -->
+                    <button id="reset-pola" style="display: none;">Coba Latihan Lain</button>
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <!-- Footer yang sama di semua halaman -->
+    <footer>
+        <div class="container">
+            <p>© 2024 [Ganti dengan Nama Anda]. Dibuat sebagai Proyek Portofolio.</p>
+            <p>
+                <a href="https://github.com/[username-anda]" target="_blank" rel="noopener noreferrer">Lihat di GitHub</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Menghubungkan ke file JavaScript yang sama -->
+    <script src="js/exercises.js"></script>
+    
+</body>
+</html>
