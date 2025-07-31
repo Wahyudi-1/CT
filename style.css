@@ -481,3 +481,38 @@ button:hover, .btn-mulai:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
+/* --- Mekanisme Latihan Pola --- */
+.pola-sequence-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+.pola-sequence-item {
+    font-size: 2rem;
+    padding: 10px 15px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.pola-sequence-item:hover {
+    background-color: #e9ecef;
+}
+.pola-sequence-item.correct {
+    background-color: var(--success-color);
+    color: white;
+    border-color: darkgreen;
+    transform: scale(1.1);
+}
+.pola-sequence-item.incorrect {
+    background-color: var(--error-color);
+    color: white;
+    border-color: darkred;
+}
