@@ -517,7 +517,9 @@ button:hover, .btn-mulai:hover {
     border-color: darkred;
 }
 
-/* --- Mekanisme Latihan Abstraksi --- */
+/* --- Mekanisme Latihan Abstraksi (Perbaikan) --- */
+
+/* Style untuk latihan klik gambar */
 .image-selection-container {
     display: flex;
     flex-wrap: wrap;
@@ -547,6 +549,20 @@ button:hover, .btn-mulai:hover {
     border-color: var(--primary-color);
     box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
     transform: scale(1.1);
+}
+
+/* Style untuk latihan seleksi teks (FIXED) */
+.text-selection-area {
+    background: white;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    
+    /* Aturan Flexbox untuk merapikan layout */
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 1rem;      
+    justify-content: flex-start; /* Mulai dari kiri */
 }
 
 /* --- Mekanisme Latihan Algoritma (Tambahan) --- */
