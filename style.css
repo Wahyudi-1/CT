@@ -519,38 +519,6 @@ button:hover, .btn-mulai:hover {
 
 /* --- Mekanisme Latihan Abstraksi (Perbaikan) --- */
 
-/* Style untuk latihan klik gambar */
-.image-selection-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-    padding: 1rem;
-    background-color: white;
-    border-radius: 8px;
-}
-.image-item {
-    border: 4px solid transparent;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-}
-.image-item img {
-    display: block;
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    border-radius: 5px;
-}
-.image-item:hover {
-    transform: scale(1.1);
-}
-.image-item.selected {
-    border-color: var(--primary-color);
-    box-shadow: 0 4px 12px rgba(0, 123, 255, 0.4);
-    transform: scale(1.1);
-}
-
 /* Style untuk latihan seleksi teks (FIXED) */
 .text-selection-area {
     background: white;
@@ -565,6 +533,13 @@ button:hover, .btn-mulai:hover {
     justify-content: flex-start; /* Mulai dari kiri */
 }
 
+/* Penyesuaian untuk item teks agar tidak terlalu besar */
+.kalimat.selectable-item {
+    display: inline-block; 
+    line-height: 1.5;      
+    font-size: 1rem; /* Ukuran font normal untuk kalimat */
+    font-weight: normal;
+}
 /* --- Mekanisme Latihan Algoritma (Tambahan) --- */
 .grid-cell.key, .grid-cell.door {
     font-weight: bold;
