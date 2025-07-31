@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <!-- Meta tags esensial -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Latihan interaktif untuk melatih pembuatan algoritma dalam berpikir komputasi.">
-    
-    <!-- Judul spesifik untuk halaman ini -->
     <title>Algoritma - Latihan Berpikir Komputasi</title>
-    
-    <!-- Menggunakan file CSS yang sama -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- ======================= HEADER ======================= -->
-    <!-- Header konsisten, class 'active' dipindahkan ke link Algoritma -->
     <header>
         <div class="container">
             <h1>Latihan Berpikir Komputasi</h1>
@@ -25,7 +18,6 @@
                     <li><a href="dekomposisi.html">Dekomposisi</a></li>
                     <li><a href="pola.html">Pengenalan Pola</a></li>
                     <li><a href="abstraksi.html">Abstraksi</a></li>
-                    <!-- Tandai link ini sebagai halaman yang aktif -->
                     <li><a href="algoritma.html" class="active">Algoritma</a></li>
                 </ul>
             </nav>
@@ -35,80 +27,47 @@
     <!-- ======================== MAIN CONTENT ======================== -->
     <main>
         <div class="container">
-
-            <!-- Section 1: Penjelasan Konsep Algoritma -->
             <section id="penjelasan-konsep">
                 <h2>Pilar 4: Algoritma</h2>
                 <p>
-                    <strong>Algoritma</strong> adalah puncak dari berpikir komputasi. Setelah memecah masalah, menemukan pola, dan menyaring detail, kini saatnya merancang solusi. Algoritma adalah serangkaian instruksi atau aturan yang jelas, langkah-demi-langkah, untuk menyelesaikan suatu tugas. Di dunia koding, sebuah program pada dasarnya adalah implementasi dari satu atau lebih algoritma. Algoritma yang baik haruslah benar, efisien, dan tidak ambigu.
+                    <strong>Algoritma</strong> adalah serangkaian instruksi atau aturan yang jelas, langkah-demi-langkah, untuk menyelesaikan suatu tugas. Rancang algoritma yang tepat untuk menyelesaikan tantangan di bawah ini.
                 </p>
             </section>
 
-            <!-- Section 2: Latihan Interaktif -->
             <section id="latihan-interaktif">
-                <h2>Latihan: Pandu Robot ke Tujuan!</h2>
-                <p>
-                    Robot 🤖 berada di pojok kiri atas dan harus mencapai bintang ✨. Rancang algoritma (urutan langkah) dengan menekan tombol arah. Setelah yakin dengan urutanmu, tekan "Jalankan Algoritma" untuk melihat apakah robotmu berhasil!
-                </p>
-
-                <!-- Wadah utama untuk latihan algoritma -->
-                <div class="algoritma-exercise-container">
-                    
-                    <!-- Sisi kiri: Kontrol dan tampilan algoritma -->
-                    <div class="algoritma-controls">
-                        <h3>Panel Kontrol</h3>
-                        <div class="tombol-arah">
-                            <button id="btn-atas">↑ Atas</button>
-                            <button id="btn-bawah">↓ Bawah</button>
-                            <button id="btn-kiri">← Kiri</button>
-                            <button id="btn-kanan">→ Kanan</button>
-                        </div>
-                        
-                        <h3>Urutan Langkah (Algoritma Anda):</h3>
-                        <div id="urutan-langkah" class="urutan-display">
-                            <!-- Langkah-langkah akan ditambahkan di sini oleh JS -->
-                        </div>
-                        
-                        <div class="tombol-aksi">
-                            <button id="jalankan-algoritma">Jalankan Algoritma</button>
-                            <button id="reset-algoritma">Reset</button>
-                        </div>
-                        
-                        <p id="hasil-feedback-algoritma"></p>
-                    </div>
-
-                    <!-- Sisi kanan: Visualisasi Labirin -->
-                    <div class="algoritma-grid-container">
-                        <h3>Labirin</h3>
-                        <div id="grid-labirin" class="grid-display">
-                            <!-- Grid akan dibuat oleh JavaScript untuk fleksibilitas -->
-                            <!-- Contoh struktur yang akan di-generate JS: -->
-                            <!-- <div class="grid-cell start">🤖</div> -->
-                            <!-- <div class="grid-cell path"></div> -->
-                            <!-- <div class="grid-cell wall"></div> -->
-                            <!-- <div class="grid-cell finish">✨</div> -->
-                        </div>
-                    </div>
+                <div class="level-selector-container">
+                    <label for="level-select">Pilih Tingkat Kesulitan:</label>
+                    <select name="levels" id="level-select">
+                        <option value="">-- Pilih Level --</option>
+                        <!-- Opsi level akan diisi secara dinamis oleh JavaScript -->
+                    </select>
                 </div>
 
-            </section>
+                <!-- Area ini adalah "kanvas kosong" yang akan diisi oleh JavaScript -->
+                <div id="exercise-content-area">
+                    <p class="placeholder-text">Pilih level untuk memulai latihan.</p>
+                </div>
 
+                <!-- Feedback dikelola oleh JavaScript -->
+                <div class="feedback-area">
+                    <p id="hasil-feedback"></p>
+                </div>
+            </section>
         </div>
     </main>
 
     <!-- ======================= FOOTER ======================= -->
-    <!-- Footer yang sama di semua halaman -->
     <footer>
         <div class="container">
-            <p>© 2024 [Ganti dengan Nama Anda]. Dibuat sebagai Proyek Portofolio.</p>
+            <p>© 2025 Wahyudi. Dibuat sebagai Iseng Saja.</p>
             <p>
-                <a href="https://github.com/[username-anda]" target="_blank" rel="noopener noreferrer">Lihat di GitHub</a>
+                <a href="https://wa.me/6281336578058" target="_blank" rel="noopener noreferrer">Kirim Whatsapp</a>
             </p>
         </div>
     </footer>
 
-    <!-- Menghubungkan ke file JavaScript yang sama -->
-    <script src="exercises.js"></script>
+    <!-- Script khusus untuk halaman ini, dengan type="module" -->
+    <script type="module" src="js/algoritma.js"></script>
     
 </body>
 </html>
