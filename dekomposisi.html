@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <!-- Meta tags esensial -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latihan interaktif untuk melatih keterampilan dekomposisi dalam berpikir komputasi.">
+    
+    <!-- Judul spesifik untuk halaman ini -->
+    <title>Dekomposisi - Latihan Berpikir Komputasi</title>
+    
+    <!-- Menggunakan file CSS yang sama untuk konsistensi tampilan -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ======================= HEADER ======================= -->
+    <!-- Header yang sama di semua halaman, hanya class 'active' yang berpindah -->
+    <header>
+        <div class="container">
+            <h1>Latihan Berpikir Komputasi</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <!-- Tandai link ini sebagai halaman yang aktif -->
+                    <li><a href="dekomposisi.html" class="active">Dekomposisi</a></li>
+                    <li><a href="pola.html">Pengenalan Pola</a></li>
+                    <li><a href="abstraksi.html">Abstraksi</a></li>
+                    <li><a href="algoritma.html">Algoritma</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ======================== MAIN CONTENT ======================== -->
+    <main>
+        <div class="container">
+
+            <!-- Section 1: Penjelasan Konsep Dekomposisi -->
+            <section id="penjelasan-konsep">
+                <h2>Pilar 1: Dekomposisi</h2>
+                <p>
+                    <strong>Dekomposisi</strong> adalah pilar pertama dalam berpikir komputasi. Ini adalah kemampuan untuk memecah masalah yang besar dan rumit menjadi beberapa bagian yang lebih kecil dan lebih mudah untuk dikelola. Bayangkan Anda ingin membuat sebuah kue besar. Anda tidak langsung memasukkan semua bahan ke dalam oven. Anda memecahnya menjadi langkah-langkah: menyiapkan bahan, membuat adonan, memanggang, dan menghias. Itulah dekomposisi!
+                </p>
+            </section>
+
+            <!-- Section 2: Latihan Interaktif -->
+            <section id="latihan-interaktif">
+                <h2>Latihan: Merakit Komputer</h2>
+                <p>
+                    Tugas Anda adalah memecah masalah "Merakit sebuah PC Gaming" menjadi komponen-komponen utamanya. <strong>Seret (drag)</strong> komponen internal yang penting dari "Pilihan Komponen" ke dalam "Kotak Rakitan PC". Abaikan komponen yang tidak perlu untuk perakitan inti.
+                </p>
+
+                <!-- Wadah utama untuk latihan -->
+                <div class="exercise-container">
+                    
+                    <!-- Kolom 1: Pilihan Komponen yang bisa di-drag -->
+                    <div class="komponen-kolom">
+                        <h3>Pilihan Komponen</h3>
+                        <div id="komponen-tersedia">
+                            <!-- Komponen yang benar (harus diseret) -->
+                            <div class="komponen" draggable="true" data-id="cpu">CPU (Processor)</div>
+                            <div class="komponen" draggable="true" data-id="ram">RAM (Memory)</div>
+                            <div class="komponen" draggable="true" data-id="mobo">Motherboard</div>
+                            <div class="komponen" draggable="true" data-id="psu">Power Supply (PSU)</div>
+                            <div class="komponen" draggable="true" data-id="storage">Storage (SSD/HDD)</div>
+                            
+                            <!-- Komponen pengecoh (tidak boleh diseret) -->
+                            <div class="komponen" draggable="true" data-id="monitor">Monitor</div>
+                            <div class="komponen" draggable="true" data-id="mouse">Mouse</div>
+                            <div class="komponen" draggable="true" data-id="printer">Printer</div>
+                        </div>
+                    </div>
+
+                    <!-- Kolom 2: Area target untuk drop -->
+                    <div class="komponen-kolom">
+                        <h3>Kotak Rakitan PC</h3>
+                        <div id="kotak-rakitan" class="drop-zone">
+                            <p>Seret komponen ke sini...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tombol untuk memeriksa jawaban dan area untuk menampilkan feedback -->
+                <div class="feedback-area">
+                    <button id="cek-jawaban-dekomposisi">Cek Jawaban</button>
+                    <p id="hasil-feedback"></p> <!-- Hasil (Benar/Salah) akan muncul di sini via JS -->
+                </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <!-- ======================= FOOTER ======================= -->
+    <!-- Footer yang sama di semua halaman -->
+    <footer>
+        <div class="container">
+            <p>© 2024 [Ganti dengan Nama Anda]. Dibuat sebagai Proyek Portofolio.</p>
+            <p>
+                <a href="https://github.com/[username-anda]" target="_blank" rel="noopener noreferrer">Lihat di GitHub</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Menghubungkan ke file JavaScript -->
+    <!-- Kita akan menaruh semua logika latihan di exercises.js agar terorganisir -->
+    <script src="js/exercises.js"></script>
+    
+</body>
+</html>
