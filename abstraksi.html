@@ -1,21 +1,14 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-    <!-- Meta tags esensial ->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Latihan interaktif untuk melatih keterampilan abstraksi dalam berpikir komputasi.">
-    
-    <!-- Judul spesifik untuk halaman ini -->
     <title>Abstraksi - Latihan Berpikir Komputasi</title>
-    
-    <!-- Menggunakan file CSS yang sama -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- ======================= HEADER ======================= -->
-    <!-- Header konsisten, class 'active' dipindahkan ke link Abstraksi -->
     <header>
         <div class="container">
             <h1>Latihan Berpikir Komputasi</h1>
@@ -24,7 +17,6 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="dekomposisi.html">Dekomposisi</a></li>
                     <li><a href="pola.html">Pengenalan Pola</a></li>
-                    <!-- Tandai link ini sebagai halaman yang aktif -->
                     <li><a href="abstraksi.html" class="active">Abstraksi</a></li>
                     <li><a href="algoritma.html">Algoritma</a></li>
                 </ul>
@@ -35,65 +27,48 @@
     <!-- ======================== MAIN CONTENT ======================== -->
     <main>
         <div class="container">
-
-            <!-- Section 1: Penjelasan Konsep Abstraksi -->
             <section id="penjelasan-konsep">
                 <h2>Pilar 3: Abstraksi</h2>
                 <p>
-                    <strong>Abstraksi</strong> adalah seni menyaring detail. Ini adalah kemampuan untuk fokus pada informasi yang paling penting dan mengabaikan detail yang tidak relevan. Pikirkan sebuah peta: peta adalah abstraksi dari sebuah kota. Peta tidak menunjukkan setiap pohon atau mobil, hanya jalan dan lokasi penting. Dengan begitu, peta menjadi lebih mudah digunakan untuk navigasi. Dalam koding, abstraksi membantu kita membuat sistem yang kompleks lebih mudah dipahami.
+                    <strong>Abstraksi</strong> adalah seni menyaring detail. Ini adalah kemampuan untuk fokus pada informasi yang paling penting dan mengabaikan detail yang tidak relevan. Latih kemampuanmu untuk melihat gambaran besar dengan latihan di bawah ini.
                 </p>
             </section>
 
-            <!-- Section 2: Latihan Interaktif -->
             <section id="latihan-interaktif">
-                <h2>Latihan: Resep Kue Nenek</h2>
-                <p>
-                    Di bawah ini adalah resep kue cokelat yang diceritakan oleh seorang nenek. Tugasmu adalah melakukan abstraksi! Klik hanya pada kalimat-kalimat yang merupakan <strong>instruksi inti</strong> untuk membuat kue. Abaikan cerita dan detail yang tidak relevan.
-                </p>
-
-                <!-- Wadah utama untuk latihan seleksi teks -->
-                <div class="abstraksi-exercise-container">
-                    <h3>Cerita Resep Kue Cokelat</h3>
-                    <div id="resep-cerita" class="text-selection-area">
-                        <!-- Setiap kalimat dibungkus <span> dengan data-type -->
-                        <!-- data-type="instruksi" untuk inti, "narasi" untuk fluff -->
-                        <span class="kalimat" data-type="narasi">Nenekku selalu bilang, rahasia kue cokelat terenak adalah cinta yang tulus. </span>
-                        <span class="kalimat" data-type="instruksi">Panaskan oven hingga 180 derajat Celcius. </span>
-                        <span class="kalimat" data-type="instruksi">Siapkan loyang dan olesi dengan mentega. </span>
-                        <span class="kalimat" data-type="narasi">Aku ingat dulu, aroma kue ini selalu memenuhi rumah setiap akhir pekan. </span>
-                        <span class="kalimat" data-type="instruksi">Campurkan 200g tepung terigu, 50g bubuk cokelat, dan 1 sdt baking powder. </span>
-                        <span class="kalimat" data-type="instruksi">Di mangkuk terpisah, kocok 2 butir telur dan 150g gula hingga mengembang. </span>
-                        <span class="kalimat" data-type="narasi">Telurnya harus dari ayam kampung yang bahagia, kata nenek sambil tersenyum. </span>
-                        <span class="kalimat" data-type="instruksi">Tuangkan adonan telur ke dalam campuran tepung secara perlahan. </span>
-                        <span class="kalimat" data-type="instruksi">Panggang di oven selama 30-35 menit. </span>
-                        <span class="kalimat" data-type="narasi">Setelah matang, seluruh keluarga pasti akan berkumpul dan memujimu.</span>
-                    </div>
+                <div class="level-selector-container">
+                    <label for="level-select">Pilih Tingkat Kesulitan:</label>
+                    <select name="levels" id="level-select">
+                        <option value="">-- Pilih Level --</option>
+                        <!-- Opsi level akan diisi secara dinamis oleh JavaScript -->
+                    </select>
                 </div>
 
-                <!-- Area untuk tombol cek dan feedback -->
+                <!-- Area ini adalah "kanvas kosong" yang akan diisi oleh JavaScript -->
+                <div id="exercise-content-area">
+                    <p class="placeholder-text">Pilih level untuk memulai latihan.</p>
+                </div>
+
+                <!-- Tombol dan feedback dikelola oleh JavaScript -->
                 <div class="feedback-area">
-                    <button id="cek-jawaban-abstraksi">Cek Jawaban</button>
-                    <p id="hasil-feedback-abstraksi"></p> <!-- Hasil akan muncul di sini -->
+                    <button id="cek-jawaban" style="display: none;">Cek Jawaban</button>
+                    <p id="hasil-feedback"></p>
                 </div>
-
             </section>
-
         </div>
     </main>
 
     <!-- ======================= FOOTER ======================= -->
-    <!-- Footer yang sama di semua halaman -->
     <footer>
         <div class="container">
-            <p>© 2024 [Ganti dengan Nama Anda]. Dibuat sebagai Proyek Portofolio.</p>
+            <p>© 2025 Wahyudi. Dibuat sebagai Iseng Saja.</p>
             <p>
-                <a href="https://github.com/[username-anda]" target="_blank" rel="noopener noreferrer">Lihat di GitHub</a>
+                <a href="https://wa.me/6281336578058" target="_blank" rel="noopener noreferrer">Kirim Whatsapp</a>
             </p>
         </div>
     </footer>
 
-    <!-- Menghubungkan ke file JavaScript yang sama -->
-    <script src="exercises.js"></script>
+    <!-- Script khusus untuk halaman ini, dengan type="module" -->
+    <script type="module" src="js/abstraksi.js"></script>
     
 </body>
 </html>
